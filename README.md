@@ -1,44 +1,33 @@
 # ERP Financeiro com Streamlit
 
-Este é uma simulaçaõ de um sistema **ERP Financeiro** simples, desenvolvido com **Streamlit** e **SQLite**, para gerenciamento de clientes, contas a pagar, contas a receber e lançamentos financeiros.
+Este projeto é uma simulação de um sistema ERP financeiro desenvolvido com Python. Os dados são gerados aleatoriamente utilizando a biblioteca Faker e armazenados em um banco de dados (`erp_finance.db`).
 
-## 📌 Funcionalidades
-- 📋 **Cadastro de Clientes**: Gerencie seus clientes com nome, e-mail e telefone.
-- 💰 **Contas a Pagar**: Controle suas despesas e pagamentos.
-- 📥 **Contas a Receber**: Acompanhe os valores a receber de clientes.
-- 📊 **Lançamentos Financeiros**: Registre receitas e despesas.
-- 📈 **Relatórios**: Visualize fluxos de caixa e outras métricas financeiras.
+## Funcionalidades
 
-## 🛠️ Tecnologias Utilizadas
-- **Python**
-- **Streamlit** (para interface gráfica)
-- **SQLite** (banco de dados)
-- **Faker** (geração de dados fictícios)
-- **Pandas** (manipulação de dados)
+Você pode visualizar os seguintes módulos no menu lateral:
 
-## 🚀 Como Executar o Projeto
+- Cadastro de Clientes
+- Contas a Pagar
+- Contas a Receber
+- Lançamentos
+- **Relatórios** (com dashboards)
 
-###  Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/erp-financeiro.git
-cd erp-financeiro
-```
+### Funcionalidades disponíveis em **"Relatórios"**:
 
-###  Crie um ambiente virtual e instale as dependências:
-```bash
-python -m venv venv
-source venv/bin/activate  # Para Linux/Mac
-venv\Scripts\activate  # Para Windows
-pip install -r requirements.txt
-```
+1. **Fluxo de Caixa por Mês**  
+   Exibe um gráfico com receitas e despesas agrupadas por mês.
 
-###  Execute a carga do banco de dados:
-```bash
-python database_finance.py
-```
+2. **Status das Contas a Pagar e Receber**  
+   Mostra um gráfico comparativo entre contas pagas/recebidas e pendentes.
 
+3. **Top 5 Clientes com Maior Receita**  
+   Tabela e gráfico com os cinco clientes que mais contribuíram com receita.
 
-### Execute a aplicação:
-```bash
-streamlit run app.py
-```
+## Como executar localmente
+
+### 1. Clone o repositório
+
+### 2. Crie o banco de dados (caso ainda não tenha)
+
+### 3. Execute a aplicação
+
